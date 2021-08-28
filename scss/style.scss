@@ -1,0 +1,26 @@
+@import "estilos/colores";
+@import "estilos/fuentes";
+@import "estilos/padding";
+
+@import "componentes/header";
+@import "componentes/footer";
+@import "componentes/contactos";
+@import "componentes/rehabilitacion";
+@import "componentes/nosotros";
+
+@import "funciones/grid";
+@import "funciones/mediaQ";
+@import "funciones/extends";
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.img-rehab {
+    width: 100px;
+    height: 100px;
+}
+.list-rehab{
+    list-style: none;
+}

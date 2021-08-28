@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/*fuente de nombre principal*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Inconsolata:wght@900&display=swap");
+/* fuente de titulos */
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+/*fuente de parrafos*/
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+/*fuente de nombre principal*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Inconsolata:wght@900&display=swap");
+/* fuente de titulos */
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+/*fuente de parrafos*/
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&family=Inconsolata:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+.navbar {
+  background-color: #3b3a3a;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  background-color: #3b3a3a;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  z-index: 10;
+}
+header a {
+  font-family: #1e222c;
+  text-decoration: none;
+}
+header h1 {
+  size: 40px;
+  font-family: #263d88;
+  color: #263d88;
+}
+header h2 {
+  text-align: center center;
+  font-family: #1e222c;
+  size: 25px;
+}
+header strong {
+  color: #e47c05;
+}
+header .nav-link {
+  color: black;
+}
+header .nav-link:hover {
+  color: orange;
+}
+
+/*fuente de nombre principal*/
+/* fuente de titulos */
+/*fuente de parrafos*/
+footer {
+  background-color: #282963;
+  color: #dfdeb0;
+  font-family: #1e222c;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .footer .redes-sociales {
+  margin: 20px;
+  width: 35px;
+  height: 35px;
+}
+footer .footer .ws-logo {
+  margin: 20px;
+  width: 45px;
+  height: 35px;
+}
+
+.container-contacto {
+  background: #3b3a3a;
+  /*colores*/
+  /*extend*/
+  flex-direction: column;
+  font-family: monospace;
+}
+
+.formulario {
+  background-image: url(../imagenes/deportista-6.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0;
+}
+.formulario .h2-contacto {
+  color: #1e222c;
+  /*colores*/
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  /*listas-$font-size*/
+  margin-bottom: 10px;
+  display: flex;
+  /*flexbox*/
+}
+.formulario form {
+  width: 450px;
+  margin: auto;
+  background: rgba 0, 0, 0, 0.4;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border: solid darkgray;
+  border-radius: 7px;
+}
+.formulario input, .formulario textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  /*listas-$font-size*/
+  border: none;
+}
+.formulario textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+.formulario #botton {
+  background: #31384A;
+  color: black;
+  /*colores*/
+  padding: 20px;
+}
+.formulario #botton:hover {
+  cursor: pointer;
+  color: #db9410;
+  transition: all 0.3s;
+}
+
+/*Tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .formulario {
+    background-color: paleturquoise;
+  }
+  .formulario .h2-contacto {
+    color: white;
+    /*colores*/
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    /*listas-$font-size*/
+    margin-bottom: 10px;
+    display: flex;
+    /*flexbox*/
+  }
+  .formulario form {
+    width: 350px;
+  }
+}
+/*Mobile 360×640*/
+@media only screen and (max-width: 400px) {
+  .formulario {
+    background-color: darkkhaki;
+  }
+  .formulario .h2-contacto {
+    color: white;
+    /*colores*/
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    /*listas-$font-size*/
+    margin-bottom: 10px;
+    display: flex;
+    /*flexbox*/
+  }
+  .formulario form {
+    width: 350px;
+  }
+}
+/*fin contactos*/
+.lista-rehab {
+  color: sandybrown;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  margin: 0;
+  justify-content: space-between;
+  grid-auto-flow: row;
+  border-radius: 7px;
+  padding: 2px;
+  list-style: none;
+  grid-template-areas: "muscular img-muscular  articular img-articular" "muscular img-muscular  articular img-articular" "postural img-postural  postcovid img-postcovid" "postural img-postural  postcovid img-postcovid";
+}
+.lista-rehab .parrafo-rehab {
+  width: 250px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: fit-content;
+  margin: auto auto;
+  border-radius: 7px;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
+  color: salmon;
+}
+.lista-rehab .img-rehab {
+  width: 100%;
+  height: 80%;
+  margin: auto auto;
+  border-radius: 7px;
+}
+.lista-rehab .muscular {
+  grid-area: muscular;
+}
+.lista-rehab .img-muscular {
+  grid-area: img-muscular;
+}
+.lista-rehab .articular {
+  grid-area: articular;
+}
+.lista-rehab .img-articular {
+  grid-area: img-articular;
+}
+.lista-rehab .postural {
+  grid-area: postural;
+}
+.lista-rehab .img-postural {
+  grid-area: img-postural;
+}
+.lista-rehab .postcovid {
+  grid-area: postcovid;
+}
+.lista-rehab .img-postcovid {
+  grid-area: img-postcovid;
+}
+
+/*Desktop 1440×900*/
+@media screen and (min-width: 961px) {
+  .lista-rehab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "muscular img-muscular  articular img-articular" "muscular img-muscular  articular img-articular" "postural img-postural  postcovid img-postcovid" "postural img-postural  postcovid img-postcovid";
+  }
+}
+/*Tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .lista-rehab {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "muscular img-muscular" "muscular img-muscular" "articular img-articular" "articular img-articular" "postural img-postural" "postural img-postural" "postcovid img-postcovid" "postcovid img-postcovid";
+  }
+}
+/*Mobile 360×640*/
+@media only screen and (max-width: 400px) {
+  .lista-rehab {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas: "muscular" "muscular" "img-muscular" "img-muscular" "articular" "articular" "img-articular" "img-articular" "postural" "postural" "img-postural" "img-postural" "postcovid" "postcovid" "img-postcovid" "img-postcovid";
+  }
+}
+.img-porf {
+  width: 150px;
+  height: 150px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.grid-disposition1 {
+  grid-area: header;
+}
+
+.grid-disposition2 {
+  grid-area: main;
+}
+
+.grid-disposition3 {
+  grid-area: footer;
+}
+
+main {
+  /*Desktop 1440×900*/
+  /*Tablet */
+  /*Mobile 360×640*/
+}
+.container-contacto {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.img-rehab {
+  width: 100px;
+  height: 100px;
+}
+
+.list-rehab {
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

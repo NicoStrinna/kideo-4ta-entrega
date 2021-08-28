@@ -1,0 +1,30 @@
+@import "../estilos/padding";
+@import "../estilos/fuentes";
+@import "../estilos/colores";
+
+@mixin redes-sociales ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+footer {
+    background-color: $background-footer;
+    color:$nombre-footer;
+    font-family: $segundo-nombre;
+    margin-top: 30px;
+    padding-bottom: map-get($padding, footer-bottom);
+    .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .redes-sociales {
+        margin: 20px;
+        @include redes-sociales (35px, 35px);
+        }
+    .ws-logo {
+        margin: 20px;
+        width: 45px;
+        height: 35px;
+        }
+    }
+}

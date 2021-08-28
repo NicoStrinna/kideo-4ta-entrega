@@ -1,0 +1,41 @@
+@import "../estilos/padding";
+@import "../estilos/fuentes";
+@import "../estilos/colores";
+
+.navbar {
+    background-color: $background;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: $background;
+    margin-bottom: 10px;
+    padding-bottom: map-get($padding, header-bottom-top);
+    padding-top: map-get($padding, header-bottom-top);
+    z-index: 10;
+        a {
+            font-family: $segundo-nombre;
+            text-decoration: none;
+        }
+    h1{
+        size: 40px;
+        font-family: $nombre-principal;
+        color: $nombre-principal;
+    }
+    h2{
+    text-align: center center;
+    font-family: $segundo-nombre;
+    size: 25px;
+    }
+    strong{
+    color:$olivos;
+    }
+
+    .nav-link {
+    color: $titulos;
+     &:hover {
+        color: orange;
+     }
+    }
+}
