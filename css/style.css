@@ -33,7 +33,7 @@ header h1 {
   color: yellowgreen;
 }
 header .nav-link {
-  color: black;
+  color: #f0e0e0;
 }
 header .nav-link:hover {
   color: orange;
