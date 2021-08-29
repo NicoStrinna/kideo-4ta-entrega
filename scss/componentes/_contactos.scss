@@ -47,18 +47,24 @@
     max-width: 100%;
     }
 
-    #botton {
-    background: #31384A;
-    color: $titulos;/*colores*/
-    padding: 20px;
-         &:hover{
+    .botton {
+     background: #31384A;
+     color: $titulos;/*colores*/
+     padding: 20px;
+        &:hover{
         cursor: pointer;
-        color: #db9410;
+        color: $olivos;
         transition: all .3s;
         }
     }
-
 }
+
+
+.litas-OS {
+    list-style: none;
+        }
+
+
     /*Tablet */
     @media only screen and (min-width: 401px) and (max-width: 960px) {
         .formulario {

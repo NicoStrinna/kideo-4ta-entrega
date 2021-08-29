@@ -2,9 +2,7 @@
 @import "../estilos/fuentes";
 @import "../estilos/colores";
 
-.navbar {
-    background-color: $background;
-}
+
 
 header {
     position: sticky;
@@ -15,27 +13,20 @@ header {
     padding-top: map-get($padding, header-bottom-top);
     z-index: 10;
         a {
-            font-family: $segundo-nombre;
+            font-family: $principal;
             text-decoration: none;
         }
     h1{
         size: 40px;
-        font-family: $nombre-principal;
+        font-family:$principal;
         color: $nombre-principal;
     }
-    h2{
-    text-align: center center;
-    font-family: $segundo-nombre;
-    size: 25px;
-    }
-    strong{
-    color:$olivos;
-    }
+
 
     .nav-link {
     color: $titulos;
      &:hover {
-        color: orange;
+        color: $olivos;
      }
     }
 }
