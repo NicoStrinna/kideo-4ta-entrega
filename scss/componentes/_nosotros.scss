@@ -1,4 +1,23 @@
-.img-porf{
-    width: 150px;
-    height: 150px;
+.nosotros{
+    .h3-nosotros{
+        color: $titulos;
+        font-size: nth($font-size , 5 );
+        padding: 15px;
+        letter-spacing: 2px;
+    }
+    .parrafo-nosotros{
+        text-align: center;
+        font-family: $parrafos;
+        font-size: nth($font-size, 3 );
+        color: $parrafos;
+        
+    }
+    .prof-conten{
+        .p-lic{
+            color: $lic;
+            font-size: nth($font-size, 3);
+            padding: 15px;
+        }
+        
+    }
 }

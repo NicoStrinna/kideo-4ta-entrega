@@ -7,6 +7,7 @@
 @import "componentes/contactos";
 @import "componentes/rehabilitacion";
 @import "componentes/nosotros";
+@import "componentes/tips";
 
 @import "funciones/grid";
 @import "funciones/mediaQ";
@@ -17,6 +18,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: $background-body;
+}
 .img-rehab {
     width: 100px;
     height: 100px;
@@ -25,11 +29,22 @@
     list-style: none;
 }
 
-h2{
+.segundo-nombre{
     text-align: center center;
     font-family: $segundo-nombre;
-    size: 25px;
+    color: $segundo-nombre;
+    font-size: nth($font-size, 3 );
     }
     strong{
     color:$olivos;
     }
+
+.main-header{
+    h3{
+    color: $titulos;
+    font-size: nth($font-size, 5);
+    }
+    .parraf-main{
+        text-align: center;
+    }
+}

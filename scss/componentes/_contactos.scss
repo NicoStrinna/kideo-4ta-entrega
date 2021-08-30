@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    margin: 0;
+    margin-bottom: 5px;
 
     .h2-contacto {
         color: $segundo-nombre; /*colores*/
@@ -27,8 +27,7 @@
     background: rgba (0,0,0,0.4);
     padding: 10px 20px;
     box-sizing: border-box;
-    margin-top: 20px;
-    border: solid darkgray;
+    margin-top: 20px;;
     border-radius: 7px;
     }
 
@@ -58,11 +57,17 @@
         }
     }
 }
-
-
-.litas-OS {
-    list-style: none;
-        }
+.display-1{
+    .como-LL{
+        @extend %display-flex;
+        align-items: center;
+        color: $titulos;
+        font-size: nth($font-size, 5);
+    }
+    .litas-OS {
+        list-style: none;
+            }
+}
 
 
     /*Tablet */

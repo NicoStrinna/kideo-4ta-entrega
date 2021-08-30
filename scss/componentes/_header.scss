@@ -17,7 +17,7 @@ header {
             text-decoration: none;
         }
     h1{
-        size: 40px;
+        font-size: nth($font-size, 6 );
         font-family:$principal;
         color: $nombre-principal;
     }

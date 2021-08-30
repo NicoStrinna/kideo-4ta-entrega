@@ -28,7 +28,7 @@ header a {
   text-decoration: none;
 }
 header h1 {
-  size: 40px;
+  font-size: 60px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: yellowgreen;
 }
@@ -78,7 +78,7 @@ footer .footer .ws-logo {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  margin: 0;
+  margin-bottom: 5px;
 }
 .formulario .h2-contacto {
   color: #1e222c;
@@ -98,7 +98,6 @@ footer .footer .ws-logo {
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 20px;
-  border: solid darkgray;
   border-radius: 7px;
 }
 .formulario input, .formulario textarea {
@@ -117,7 +116,7 @@ footer .footer .ws-logo {
 }
 .formulario .botton {
   background: #31384A;
-  color: black;
+  color: #f70808;
   /*colores*/
   padding: 20px;
 }
@@ -127,7 +126,12 @@ footer .footer .ws-logo {
   transition: all 0.3s;
 }
 
-.litas-OS {
+.display-1 .como-LL {
+  align-items: center;
+  color: #f70808;
+  font-size: 40px;
+}
+.display-1 .litas-OS {
   list-style: none;
 }
 
@@ -172,7 +176,18 @@ footer .footer .ws-logo {
   }
 }
 /*fin contactos*/
-.lista-rehab {
+.rehabilitacion {
+  /*Desktop 1440×900*/
+  /*Tablet */
+  /*Mobile 360×640*/
+}
+.rehabilitacion .h3-rehabilitacion {
+  color: #f70808;
+  font-family: #f70808;
+  font-size: 25px;
+  padding: 25px;
+}
+.rehabilitacion .lista-rehab {
   color: sandybrown;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: grid;
@@ -187,7 +202,7 @@ footer .footer .ws-logo {
   list-style: none;
   grid-template-areas: "muscular img-muscular  articular img-articular" "muscular img-muscular  articular img-articular" "postural img-postural  postcovid img-postcovid" "postural img-postural  postcovid img-postcovid";
 }
-.lista-rehab .parrafo-rehab {
+.rehabilitacion .lista-rehab .parrafo-rehab {
   width: 250px;
   font-family: Arial, Helvetica, sans-serif;
   height: fit-content;
@@ -198,40 +213,38 @@ footer .footer .ws-logo {
   padding: 15px;
   color: salmon;
 }
-.lista-rehab .img-rehab {
+.rehabilitacion .lista-rehab .img-rehab {
   width: 100%;
   height: 80%;
   margin: auto auto;
   border-radius: 7px;
 }
-.lista-rehab .muscular {
+.rehabilitacion .lista-rehab .muscular {
   grid-area: muscular;
 }
-.lista-rehab .img-muscular {
+.rehabilitacion .lista-rehab .img-muscular {
   grid-area: img-muscular;
 }
-.lista-rehab .articular {
+.rehabilitacion .lista-rehab .articular {
   grid-area: articular;
 }
-.lista-rehab .img-articular {
+.rehabilitacion .lista-rehab .img-articular {
   grid-area: img-articular;
 }
-.lista-rehab .postural {
+.rehabilitacion .lista-rehab .postural {
   grid-area: postural;
 }
-.lista-rehab .img-postural {
+.rehabilitacion .lista-rehab .img-postural {
   grid-area: img-postural;
 }
-.lista-rehab .postcovid {
+.rehabilitacion .lista-rehab .postcovid {
   grid-area: postcovid;
 }
-.lista-rehab .img-postcovid {
+.rehabilitacion .lista-rehab .img-postcovid {
   grid-area: img-postcovid;
 }
-
-/*Desktop 1440×900*/
 @media screen and (min-width: 961px) {
-  .lista-rehab {
+  .rehabilitacion .lista-rehab {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -239,9 +252,8 @@ footer .footer .ws-logo {
     grid-template-areas: "muscular img-muscular  articular img-articular" "muscular img-muscular  articular img-articular" "postural img-postural  postcovid img-postcovid" "postural img-postural  postcovid img-postcovid";
   }
 }
-/*Tablet */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  .lista-rehab {
+  .rehabilitacion .lista-rehab {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -249,9 +261,8 @@ footer .footer .ws-logo {
     grid-template-areas: "muscular img-muscular" "muscular img-muscular" "articular img-articular" "articular img-articular" "postural img-postural" "postural img-postural" "postcovid img-postcovid" "postcovid img-postcovid";
   }
 }
-/*Mobile 360×640*/
 @media only screen and (max-width: 400px) {
-  .lista-rehab {
+  .rehabilitacion .lista-rehab {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -259,12 +270,35 @@ footer .footer .ws-logo {
     grid-template-areas: "muscular" "muscular" "img-muscular" "img-muscular" "articular" "articular" "img-articular" "img-articular" "postural" "postural" "img-postural" "img-postural" "postcovid" "postcovid" "img-postcovid" "img-postcovid";
   }
 }
-.img-porf {
-  width: 150px;
-  height: 150px;
+
+.nosotros .h3-nosotros {
+  color: #f70808;
+  font-size: 40px;
+  padding: 15px;
+  letter-spacing: 2px;
+}
+.nosotros .parrafo-nosotros {
+  text-align: center;
+  font-family: #c1876b;
+  font-size: 25px;
+  color: #c1876b;
+}
+.nosotros .prof-conten .p-lic {
+  color: #bff303;
+  font-size: 25px;
+  padding: 15px;
+}
+
+.tips .h3-tips {
+  width: 100%;
+  color: #f70808;
+  font-size: 40px;
+  padding: 25px;
 }
 
 .grid {
+  background-color: #0c6272;
+  color: #c1876b;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto;
@@ -290,7 +324,7 @@ main {
   /*Tablet */
   /*Mobile 360×640*/
 }
-.container-contacto {
+.container-contacto, .display-1 .como-LL {
   display: flex;
   justify-content: center;
 }
@@ -298,6 +332,10 @@ main {
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #0c6272;
 }
 
 .img-rehab {
@@ -309,14 +347,23 @@ main {
   list-style: none;
 }
 
-h2 {
+.segundo-nombre {
   text-align: center center;
   font-family: #1e222c;
-  size: 25px;
+  color: #1e222c;
+  font-size: 25px;
 }
 
 strong {
   color: orange;
+}
+
+.main-header h3 {
+  color: #f70808;
+  font-size: 40px;
+}
+.main-header .parraf-main {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
