@@ -279,7 +279,7 @@ footer .footer .ws-logo {
   color: #c1876b;
 }
 .nosotros .prof-conten .p-lic {
-  color: #bff303;
+  color: gold;
   font-size: 25px;
   padding: 15px;
 }
@@ -313,8 +313,6 @@ footer .footer .ws-logo {
 .grid-disposition3 {
   grid-area: footer;
 }
-
-
 
 .container-contacto, .display-1 .como-LL {
   display: flex;
