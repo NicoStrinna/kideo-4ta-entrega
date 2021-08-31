@@ -176,11 +176,6 @@ footer .footer .ws-logo {
   }
 }
 /*fin contactos*/
-.rehabilitacion {
-  /*Desktop 1440×900*/
-  /*Tablet */
-  /*Mobile 360×640*/
-}
 .rehabilitacion .h3-rehabilitacion {
   color: #f70808;
   font-family: #f70808;
@@ -319,11 +314,8 @@ footer .footer .ws-logo {
   grid-area: footer;
 }
 
-main {
-  /*Desktop 1440×900*/
-  /*Tablet */
-  /*Mobile 360×640*/
-}
+
+
 .container-contacto, .display-1 .como-LL {
   display: flex;
   justify-content: center;
@@ -334,7 +326,7 @@ main {
   padding: 0;
 }
 
-body {
+.body {
   background-color: #0c6272;
 }
 
