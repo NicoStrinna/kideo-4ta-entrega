@@ -73,14 +73,14 @@ footer .footer .ws-logo {
   font-family: monospace;
 }
 
-.formulario {
+.form-contenedor {
   background-image: url(../imagenes/deportista-6.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   margin-bottom: 5px;
 }
-.formulario .h2-contacto {
+.form-contenedor .h2-contacto {
   color: #1e222c;
   /*colores*/
   text-align: center;
@@ -91,8 +91,8 @@ footer .footer .ws-logo {
   display: flex;
   /*flexbox*/
 }
-.formulario form {
-  width: 450px;
+.form-contenedor .form {
+  max-width: 450px;
   margin: auto;
   background: rgba 0, 0, 0, 0.4;
   padding: 10px 20px;
@@ -100,29 +100,38 @@ footer .footer .ws-logo {
   margin-top: 20px;
   border-radius: 7px;
 }
-.formulario input, .formulario textarea {
+.form-contenedor .form input, .form-contenedor .form textarea {
   width: 100%;
   margin-bottom: 20px;
   padding: 7px;
   box-sizing: border-box;
   font-size: 17px;
   /*listas-$font-size*/
-  border: none;
+  border: solid white;
+  border-radius: 7px;
 }
-.formulario textarea {
+.form-contenedor .form input:hover, .form-contenedor .form textarea:hover {
+  cursor: pointer;
+  border: solid red;
+  transition: all 0.3s;
+}
+.form-contenedor .form textarea {
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
+  border-radius: 7px;
 }
-.formulario .botton {
-  background: #31384A;
-  color: #f70808;
-  /*colores*/
-  padding: 20px;
-}
-.formulario .botton:hover {
+.form-contenedor .form textarea:hover {
   cursor: pointer;
-  color: orange;
+  border: solid red;
+  transition: all 0.3s;
+}
+.form-contenedor .form .boton {
+  border-radius: 7px;
+}
+.form-contenedor .form .boton:hover {
+  cursor: pointer;
+  color: red;
   transition: all 0.3s;
 }
 
@@ -131,8 +140,8 @@ footer .footer .ws-logo {
   color: #f70808;
   font-size: 40px;
 }
-.display-1 .litas-OS {
-  list-style: none;
+.display-1 .Atendemos {
+  color: #56c6e9;
 }
 
 /*Tablet */
@@ -277,6 +286,8 @@ footer .footer .ws-logo {
   font-family: #c1876b;
   font-size: 25px;
   color: #c1876b;
+  width: 80%;
+  margin: 0 auto;
 }
 .nosotros .prof-conten .p-lic {
   color: gold;
@@ -325,6 +336,7 @@ footer .footer .ws-logo {
 }
 
 .body {
+  width: 100%;
   background-color: #0c6272;
 }
 

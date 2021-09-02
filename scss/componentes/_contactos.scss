@@ -5,7 +5,7 @@
     font-family: monospace; 
 }
 
-.formulario {
+.form-contenedor {
     background-image: url(../imagenes/deportista-6.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -21,39 +21,50 @@
         display: flex;                          /*flexbox*/
         }
 
-    form {
-    width: 450px;
+    .form {
+    max-width: 450px;
     margin: auto;
     background: rgba (0,0,0,0.4);
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 20px;;
     border-radius: 7px;
-    }
+    
 
-    input, textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: nth($font-size, 1);/*listas-$font-size*/
-    border: none;
-    }
+        input, textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        font-size: nth($font-size, 1);/*listas-$font-size*/
+        border: solid white;
+        border-radius: 7px;
+            &:hover{
+                cursor: pointer;
+                border: solid $seleccion;
+                transition: all .3s;
+            }
+        }
 
-    textarea {
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
-    }
+        textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%;
+        border-radius: 7px;
+            &:hover{
+                cursor: pointer;
+                border: solid $seleccion;
+                transition: all .3s;
+            }
+        }
 
-    .botton {
-     background: #31384A;
-     color: $titulos;/*colores*/
-     padding: 20px;
-        &:hover{
-        cursor: pointer;
-        color: $olivos;
-        transition: all .3s;
+        .boton {
+            border-radius: 7px;
+            &:hover{
+                cursor: pointer;
+                color: $seleccion;
+                transition: all .3s;
+            }
         }
     }
 }
@@ -64,9 +75,9 @@
         color: $titulos;
         font-size: nth($font-size, 5);
     }
-    .litas-OS {
-        list-style: none;
-            }
+    .Atendemos{
+        color: $Atendemos;
+    }
 }
 
 
